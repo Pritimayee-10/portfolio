@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Priti — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b1220] text-gray-100">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-opacity-40 bg-black/30 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 flex items-center justify-center font-bold">PP</div>
+        <div class="hidden sm:block">
+          <div class="text-sm font-semibold">Pritimayee Padhan</div>
+          <div class="text-xs text-gray-300">B.Tech • Data & Web Enthusiast</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html" class="nav-link hover:text-blue-400">Home</a>
+        <a href="skills.html" class="nav-link hover:text-blue-400">Skills</a>
+        <a href="projects.html" class="nav-link hover:text-blue-400">Projects</a>
+        <a href="education.html" class="nav-link hover:text-blue-400">Education</a>
+        <a href="experience.html" class="nav-link hover:text-blue-400">Experience</a>
+        <a href="contact.html" class="nav-link hover:text-blue-400">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="mobileBtn" class="p-2 rounded-md bg-white/10">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black/40">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </header>
+  <!--INTRO-->
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight reveal">Hi, I’m <span class="text-indigo-400">Priti</span>.</h1>
+        <p class="mt-4 text-gray-300 max-w-2xl reveal delay-100">Final-year B.Tech ETC student with strong fundamentals in Object-Oriented Programming (OOP) and Database Management Systems (DBMS). I have developed projects including a Java-based Quiz Application and a hotel booking website using HTML, CSS, and JavaScript. Currently, I am learning backend development with Node.js and MySQL. I am passionate about creating user-friendly, functional solutions and continuously expanding my technical expertise.</p>
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="card-small reveal">
+            <div class="text-sm text-gray-400">Top Skill</div>
+            <div class="font-semibold">JAVA & SQL</div>
+          </div>
+          <div class="card-small reveal delay-100">
+          </div>
+          <div class="card-small reveal delay-200">    
+          </div>
+        </div>
+      </div>
+      <aside class="flex justify-center md:justify-end">
+        <img src="Priti.jpg" alt="Priti" class="w-56 h-56 rounded-2xl object-cover ring-2 ring-indigo-500 static-photo reveal delay-150">
+      </aside>
+    </section>
+      <div class="panel reveal delay-100">
+        <h4 class="text-lg font-semibold">Current Focus</h4>
+        <p class="mt-2 text-gray-300">Optimizing hotel booking availability and improving UX using Node + MySQL.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-400 justify-center">
+    © 2025 Pritimayee Padhan.All Rights Reserved.
+  </footer >
+  <script src="script.js"></script>
+</body>
+</html>
