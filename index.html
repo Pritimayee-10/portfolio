@@ -71,6 +71,22 @@
   <footer class="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-400 justify-center">
     © 2025 Pritimayee Padhan.All Rights Reserved.
   </footer >
-  <script src="script.js"></script>
+<!--   <script src="script.js"></script> -->
+  <script>
+const mobileBtn = document.getElementById('mobileBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
+
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+});
+</script>
 </body>
+
 </html>
